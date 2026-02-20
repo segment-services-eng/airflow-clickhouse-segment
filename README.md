@@ -76,14 +76,13 @@ Option B: **Wait for schedule**
 ## Architecture
 
 ```
-                        Data Loading (one-time or batch)
 ┌──────────────┐      ┌─────────────┐      ┌─────────────┐
-│  Retail Pro  │─────▶│   Python    │─────▶│ ClickHouse  │
-│    CSVs      │      │   Loader    │      │  (source)   │
+│  Retail Pro  │─────▶│     S3      │─────▶│ ClickHouse  │
+│   (POS)      │      │   (CSVs)    │      │             │
 └──────────────┘      └─────────────┘      └─────────────┘
                                                   │
                                                   │
-                        Sync Pipeline (every 15 min)
+                         Sync Pipeline (every 15 min)
                                                   │
                                                   ▼
 ┌─────────────────────────────────────────────────────────────┐
