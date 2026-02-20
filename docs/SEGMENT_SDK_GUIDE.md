@@ -556,7 +556,7 @@ except Exception as e:
 
 ## Additional Resources
 
-- [Segment Python SDK Documentation](https://segment.com/docs/connections/sources/catalog/libraries/server/python/)
+- [Analytics for Python (Official Docs)](https://www.twilio.com/docs/segment/connections/sources/catalog/libraries/server/python)
 - [Segment eCommerce Spec](https://segment.com/docs/connections/spec/ecommerce/v2/)
 - [Segment Identify Spec](https://segment.com/docs/connections/spec/identify/)
 - [Segment Track Spec](https://segment.com/docs/connections/spec/track/)
